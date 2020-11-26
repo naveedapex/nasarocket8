@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* width: 100vw;
+  height: 100vh;
+  overflow: hidden; */
 }
 
-.App-link {
-  color: #61dafb;
+.LaunchList {
+  height: 100vh;
+  overflow: hidden auto;
+  background-color: #ececec;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.LaunchList__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.LaunchList__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #919191;
+  cursor: pointer;
+}
+
+.LaunchProfile {
+  height: 100vh;
+  max-height: 100%;
+  width: calc(100vw - 300px);
+  overflow: hidden auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.LaunchProfile__status {
+  margin-top: 40px;
+}
+
+.LaunchProfile__title {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.LaunchProfile__success {
+  color: #2cb84b;
+}
+
+.LaunchProfile__failed {
+  color: #ff695e;
+}
+
+.LaunchProfile__image-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  padding-bottom: 100px;
+}
+
+.LaunchProfile__image {
+  width: 100%;
 }
