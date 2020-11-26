@@ -1,5 +1,4 @@
 import React from 'react';
-import MissionContainer from './index';
 import { LaunchListQuery } from '../../generated/graphql';
 
 export interface OwnProps {
